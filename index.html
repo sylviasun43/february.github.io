@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Google Model Viewer Example</title>
-  <!-- Include Google Model Viewer library -->
-  <script src="https://modelviewer.dev/shared/modelviewer.js"></script>
-</head>
-<body>
-  <h1>View Panghu Model</h1>
-  
-  <model-viewer
-    src="panghu.glb"
+<!-- Import the component -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 
-  </model-viewer>
-</body>
-</html>
+<!-- Use it like any other HTML element -->
+<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="shared-assets/models/NeilArmstrong.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
