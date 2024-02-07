@@ -3,70 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artist Network</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Google Model Viewer Example</title>
+  <!-- Include Google Model Viewer library -->
+  <script src="https://modelviewer.dev/shared/modelviewer.js"></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Artist Network</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Artists</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Login</a></li> <!-- Assuming login functionality -->
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="intro">
-    <div class="container">
-      <h2>Welcome to Artist Network</h2>
-      <p>Connecting artists worldwide!</p>
-    </div>
-  </section>
-
-  <section class="artists">
-    <div class="container">
-      <h2>Featured Artists</h2>
-      <div class="grid-container">
-        <div class="artist">
-          <img src="artist1.jpg" alt="Artist 1">
-          <h3>Artist Name</h3>
-          <p>Description of the artist.</p>
-          <button class="network-btn">Connect</button> <!-- Example networking button -->
-        </div>
-        <div class="artist">
-          <img src="artist2.jpg" alt="Artist 2">
-          <h3>Artist Name</h3>
-          <p>Description of the artist.</p>
-          <button class="network-btn">Connect</button> <!-- Example networking button -->
-        </div>
-        <!-- Add more artist divs here as needed -->
-      </div>
-    </div>
-  </section>
-
-  <section class="models">
-    <div class="container">
-      <h2>3D Models</h2>
-      <!-- Embed panghu.glb using Model Viewer -->
-      <model-viewer src="panghu.glb" alt="Panghu 3D Model" auto-rotate camera-controls></model-viewer>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Artist Network. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="https://modelviewer.dev/shared/model-viewer/model-viewer.min.js"></script> <!-- Include Google's Model Viewer library -->
-  <script src="script.js"></script> <!-- Assuming JavaScript for networking functionalities -->
+  <h1>View Panghu Model</h1>
+  
+  <!-- Embed Google Model Viewer -->
+  <model-viewer
+    src="panghu.glb"
+    alt="A 3D model of Panghu"
+    auto-rotate
+    camera-controls
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    ios-src="URL_TO_PANGHU_GLB_FILE">
+  </model-viewer>
 </body>
 </html>
